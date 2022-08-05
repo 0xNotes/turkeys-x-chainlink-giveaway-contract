@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BNSL 1.1
 pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
-import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+import "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
+import "chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+import "chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 
 contract Giveaway is VRFConsumerBaseV2 {
     VRFCoordinatorV2Interface COORDINATOR;
