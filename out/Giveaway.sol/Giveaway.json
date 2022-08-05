@@ -1,0 +1,97 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ea0dd8d5e30a23be02bc640326686475cdf83971b94d2808e4e34d00083b5c7364736f6c634300080d0033",
+    "sourceMap": "133:26:20:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea2646970667358221220ea0dd8d5e30a23be02bc640326686475cdf83971b94d2808e4e34d00083b5c7364736f6c634300080d0033",
+    "sourceMap": "133:26:20:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/Giveaway.sol",
+    "id": 23526,
+    "exportedSymbols": {
+      "Address": [
+        23141
+      ],
+      "Context": [
+        23163
+      ],
+      "ERC165": [
+        23487
+      ],
+      "ERC721": [
+        22525
+      ],
+      "Giveaway": [
+        23525
+      ],
+      "IERC165": [
+        23499
+      ],
+      "IERC721": [
+        22641
+      ],
+      "IERC721Metadata": [
+        22811
+      ],
+      "IERC721Receiver": [
+        22659
+      ],
+      "Strings": [
+        23463
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:122:20",
+    "nodes": [
+      {
+        "id": 23523,
+        "nodeType": "PragmaDirective",
+        "src": "37:24:20",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 23524,
+        "nodeType": "ImportDirective",
+        "src": "64:66:20",
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
+        "file": "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 23526,
+        "sourceUnit": 22526,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 23525,
+        "nodeType": "ContractDefinition",
+        "src": "133:26:20",
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Giveaway",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          23525
+        ],
+        "name": "Giveaway",
+        "nameLocation": "142:8:20",
+        "scope": 23526,
+        "usedErrors": []
+      }
+    ],
+    "license": "BNSL 1.1"
+  },
+  "id": 20
+}
