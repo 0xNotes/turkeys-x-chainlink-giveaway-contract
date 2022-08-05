@@ -1,11 +1,12 @@
 // SPDX-License-Identifier: BNSL 1.1
 pragma solidity ^0.8.10;
 
-//this just needs to supply NFTs to some of the contract addresse
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+
+// import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+// import "@openzeppelin/contracts/utils/Counters.sol";
+// import "@openzeppelin/contracts/access/Ownable.sol";
+// import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+
 
 contract TestMinter is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
