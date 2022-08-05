@@ -11,6 +11,82 @@
     ]
   },
   "files": {
+    "lib/chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
+      "lastModificationDate": 1659730065108,
+      "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
+      "sourceName": "lib/chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "VRFConsumerBaseV2": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "VRFConsumerBaseV2.sol/VRFConsumerBaseV2.json"
+        }
+      }
+    },
+    "lib/chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
+      "lastModificationDate": 1659730065111,
+      "contentHash": "8c9ed3426b676f67ee200a2bec96e224",
+      "sourceName": "lib/chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "VRFCoordinatorV2Interface": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "VRFCoordinatorV2Interface.sol/VRFCoordinatorV2Interface.json"
+        }
+      }
+    },
     "lib/forge-std/lib/ds-test/src/test.sol": {
       "lastModificationDate": 1659728265598,
       "contentHash": "962996f0e05d5218857a538a62d7c47e",
@@ -824,8 +900,8 @@
       }
     },
     "src/Giveaway.sol": {
-      "lastModificationDate": 1659728654750,
-      "contentHash": "0d6241f3c63af9aad34f25bdefe18bc9",
+      "lastModificationDate": 1659731134387,
+      "contentHash": "116ea80cc574e070a8d76ca7ee0e71c8",
       "sourceName": "src/Giveaway.sol",
       "solcConfig": {
         "settings": {
@@ -854,6 +930,8 @@
         }
       },
       "imports": [
+        "lib/chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
+        "lib/chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
