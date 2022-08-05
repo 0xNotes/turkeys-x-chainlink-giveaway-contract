@@ -7,7 +7,6 @@ import "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
 contract Giveaway{
 
-    //Address of Turkeys to iterate over
     address targetNFT;
     //Used to store old winners in case they dont respond to winning.
     address[] previousWinners;
@@ -35,11 +34,14 @@ contract Giveaway{
 
 
 
-    function runGiveaway() public returns(uint256) {
-
+    function runGiveaway() public onlyOwner returns(uint256) {
 
 
     } 
+
+    function transferOwner(address _newOwner) public onlyOwner {
+        owner = _newOwner;
+    }
 
 
 
