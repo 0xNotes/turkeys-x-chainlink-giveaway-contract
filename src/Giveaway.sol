@@ -40,7 +40,6 @@ contract Giveaway is VRFConsumerBaseV2 {
     uint256 public s_requestId;
     address s_owner;
 
-    address targetNFT;
     //Used to store old winners in case they dont respond to winning.
     address[] previousWinners;
     address owner;
@@ -78,6 +77,7 @@ contract Giveaway is VRFConsumerBaseV2 {
         );
     }
 
+
     function fulfillRandomWords(
         uint256, /* requestId */
         uint256[] memory randomWords
@@ -85,7 +85,15 @@ contract Giveaway is VRFConsumerBaseV2 {
         s_randomWords = randomWords;
     }
 
-    function runGiveaway(uint256 _idMax) public onlyOwner returns (uint256) {}
+
+    function getWinner(address _targetNFT, uint256 _idMax) public view returns(address winner, uint256 winnerID){
+        return (ERC721(_targetNFT).ownerOf((s_randomWords[0] % _idMax)), (s_randomWords[0] % _idMax));
+    }
+
+    function getWinnerTest1(uint256 _idMax) public view returns(uint256 winnerID){
+        return (s_randomWords[0] % _idMax);
+    }
+    //Just add modulus for the winner.
 
     function transferOwner(address _newOwner) public onlyOwner {
         owner = _newOwner;
